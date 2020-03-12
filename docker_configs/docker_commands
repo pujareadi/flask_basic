@@ -1,0 +1,22 @@
+
+docker image build -t flask_start:1.0 .
+
+docker container run --publish 8000:8080 --detach flask_start:1.0
+
+docker ps
+
+docker run flask_start:1.0 bash  # Run Docker
+
+docker exec -it {{containerID}} bash (#Go insite docker)
+
+curl localhost:80
+
+
+sudo docker images
+
+sudo docker system prune
+sudo docker rmi name:tag
+
+
+
+uwsgi --ini docker_configs/mysite_uwsgi.ini

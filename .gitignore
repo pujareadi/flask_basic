@@ -1,0 +1,10 @@
+__pycache__
+.idea
+*.rdb
+.python-version
+venv/
+.coverage
+htmlcov
+*.log
+*.DS_Store
+.env
